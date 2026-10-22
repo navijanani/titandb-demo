@@ -1,0 +1,29 @@
+{
+  "name": "titandb-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone, backend-free interactive demo of the TitanDB studio UI (sample data only).",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/check-no-network.mjs",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "check:offline": "node scripts/check-no-network.mjs"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "3.44.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "typescript": "6.0.3",
+    "vite": "8.0.16"
+  }
+}
